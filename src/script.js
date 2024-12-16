@@ -47,7 +47,7 @@ app.get('/help', (req, res) => {
 
 // Fetching weather data based on address
 app.get('/weather', (req, res) => {
-    const {_, userUnits} = req.query;
+    const {_, units} = req.query;
     if (!req.query.address) {
         return res.send({
             error: 'You must provide an address'
@@ -69,7 +69,7 @@ app.get('/weather', (req, res) => {
                 location,
                 address: req.query.address
             })
-        }, userUnits)
+        }, units)
     })
 })
 
