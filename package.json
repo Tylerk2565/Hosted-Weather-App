@@ -1,0 +1,17 @@
+{
+  "name": "hosted-weather-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/script.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "handlebars": "^4.7.8",
+    "hbs": "^4.2.0",
+    "request": "^2.88.2"
+  }
+}
